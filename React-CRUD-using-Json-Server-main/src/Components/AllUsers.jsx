@@ -66,9 +66,12 @@ const AllUsers = () => {
                         <TableCell>{data.phone}</TableCell>
                         <TableCell>{data.birthday}</TableCell>
                         <TableCell>
-                            <Button variant="contained" color="primary" style={{margin: '0px 20px'}} component={Link} to={`/edit/${data.id}`}>Edit</Button>
-                            <Button variant="contained" color="secondary" style={{margin: '0px 20px'}} onClick={() => deleteData(data.id)}>Cancel</Button>
+                            <Button variant="contained" style={{backgroundColor: 'skyblue', color: 'white', margin: '0px 20px'}} component={Link} to={`/edit/${data.id}`}>Edit</Button>
+                            <Button variant="contained" style={{backgroundColor: 'yellow', color: 'black', margin: '0px 20px'}} onClick={() => deleteData(data.id)}>Delete</Button>
                         </TableCell>
+                
+
+
                     </TableRow>
                 ))
             }

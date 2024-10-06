@@ -34,7 +34,7 @@ const AddUser = () => {
     return (
         <Container maxWidth="sm">
             <Box my={5}>
-            <Typography variant="h5" align="center">Add New Users</Typography>
+            <Typography variant="h5" align="center">Add New User</Typography>
             <FormGroup>
                 <FormControl>
                     <InputLabel>Name</InputLabel>
@@ -57,8 +57,8 @@ const AddUser = () => {
                     <Input onChange={(e) => onValueChange(e)} name="birthday" value={birthday} />
                 </FormControl>
                 <Box my={3}>
-                    <Button variant="contained" color="primary" style={{margin: '0px 20px'}} component={Link} to={`/edit/${data.id}`}>Edit</Button>
-                    <Button variant="contained" color="secondary" style={{margin: '0px 20px'}} onClick={() => deleteData(data.id)}>Cancel</Button>
+                    <Button variant="contained" onClick={() => addUserDetails() } align="center" style={{backgroundColor: 'skyblue', color: 'white', margin: '0px 20px'}}>Add User</Button>
+                    <Button onClick={()=> history.push("/all")} variant="contained" align="center" style={{backgroundColor: 'yellow', color: 'black', margin: '0px 20px'}}>Cancel</Button>
                 </Box>
             </FormGroup>
             </Box>

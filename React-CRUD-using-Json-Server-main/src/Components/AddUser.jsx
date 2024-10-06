@@ -8,12 +8,13 @@ const initialValue = {
     username : "",
     email: "",
     phone: "",
+    birthday: "",
 }
 
 const AddUser = () => {
 
     const [user, setUser] = useState(initialValue);
-    const {name, username, email, phone} = user;
+    const {name, username, email, phone, birthday} = user;
 
     const history = useHistory();
 
@@ -50,6 +51,10 @@ const AddUser = () => {
                 <FormControl>
                     <InputLabel>Phone Number</InputLabel>
                     <Input onChange={(e) => onValueChange(e)} name="phone" value={phone} />
+                </FormControl>
+                <FormControl>
+                    <InputLabel>Birthday</InputLabel>
+                    <Input onChange={(e) => onValueChange(e)} name="birthday" value={birthday} />
                 </FormControl>
                 <Box my={3}>
                     <Button variant="contained" onClick={() => addUserDetails() } color="primary" align="center">Add User</Button>

@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles({
     header: {
-        backgroundColor: '#212121',
+        backgroundColor: 'gray',
     },
     spacing :{
         paddingLeft: 20,
-        color: '#fff',
+        color: 'darkgray',
         fontSize: '18px',
         textDecoration: 'none',
     }

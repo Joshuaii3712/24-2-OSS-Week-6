@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 const useStyle = makeStyles({
     table: {
-        width: '80%',
-        margin: '50px 100px 100px 140px',
+        width: '90%',
+        margin: '40px 90px 90px 120px',
     },
     thead:{
         '& > *':{
-            background: '#000000',
-            color:'#FFFFFF',
+            background: '#3DED97',
+            color:'#028A0F',
             fontSize: '16px'
         }
     },

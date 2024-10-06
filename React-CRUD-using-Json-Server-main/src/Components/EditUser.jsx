@@ -67,9 +67,9 @@ const EditUser = () => {
                     <InputLabel>Birthday</InputLabel>
                     <Input onChange={(e) => onValueChange(e)} name="birthday" value={birthday} />
                 </FormControl>
-                <Box my={3}>
-                    <Button variant="contained" onClick={() => editUserDetails() } color="primary" align="center">Update User</Button>
-                    <Button onClick={()=> history.push("/all")} variant="contained" color="secondary" align="center" style={{margin: '0px 20px'}}>Cancel</Button>
+                <Box my={3} display="flex" justifyContent="space-between">
+                    <Button variant="contained" onClick={() => editUserDetails()} style={{ backgroundColor: 'skyblue', color: 'white' }}>Edit</Button>
+                    <Button onClick={() => history.push("/all")} variant="contained" style={{ backgroundColor: 'yellow', color: 'black', marginLeft: '10px' }}>Cancel</Button>
                 </Box>
             </FormGroup>
             </Box>
